@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/css/bulma.min.css" />
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@700&display=swap');
+
         .is-whatsapp {
             background-color: #25D366;
         }
@@ -17,6 +19,84 @@
         .navbar-burger {
             color: var(--bulma-navbar-item-color);
             font-weight: bold;
+        }
+
+        .logo-item {
+            font-size: 1.5em;
+            font-family: "Markazi Text", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .logo-item b {
+            margin-top: 5px;
+        }
+
+        .fixed-grid {
+            margin-top: 50px;
+        }
+
+        .cell h1 {
+            font-family: "Markazi Text", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 4em;
+            color: #b01828;
+            line-height: 0.9;
+        }
+
+        .cell h4 {
+            margin-bottom: 0;
+            margin-top: 20px;
+            font-family: "Markazi Text", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 2em;
+            color: #049430;
+            line-height: 1;
+        }
+
+        svg {
+            position: relative;
+            transition: all 0.5s ease-in-out;
+        }
+
+        svg .ekg {
+            fill: none;
+            stroke: #049430;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: miter;
+            opacity: 0;
+            stroke-dashoffset: 1000;
+            stroke-dasharray: 1000;
+            animation: ekg 1.5s linear forwards infinite;
+        }
+
+        @keyframes ekg {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            50% {
+                stroke-dashoffset: 2000;
+            }
+
+            99% {
+                opacity: 0;
+                stroke-dashoffset: 3000;
+            }
+
+            100% {
+                stroke-dashoffset: 1000;
+            }
         }
 
         /*
@@ -46,7 +126,7 @@
 <body class="container">
     <nav class="navbar">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
+            <a class="navbar-item logo-item" href="/">
                 <img src="/images/logo.png" alt="Sure Health SAS Medicals Logo" />
                 <b>Sure Health SAS</b>
             </a>
@@ -76,6 +156,25 @@
             </div>
         </div>
     </nav>
+    <div class="fixed-grid has-1-cols-mobile has-1-cols-tablet has-2-cols-desktop">
+        <div class="grid">
+            <div class="cell">
+                <h1>Medical Equipment and BIS Certified Medical Calibration</h1>
+                <h4>We Offer a Wide Range of Medical Equipment like Wheel Chairs, First Aid Kits, Oximeter and
+                    Defibrillators.</h4>
+            </div>
+            <div class="cell">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 200"
+                    style="enable-background:new 0 0 500 200;" xml:space="preserve">
+                    <g>
+                        <polyline class="ekg" points="486.6,113.8 328.2,113.8 310.3,132.3 296,70.7 246.8,127.4 241.6,120.2 233.9,166.4 227,27.6
+                        213.2,118.3 211.8,112.3 205.1,126.1 198.2,108.5 194.1,124.4 184.5,92.9 174.1,113 4.3,113" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
