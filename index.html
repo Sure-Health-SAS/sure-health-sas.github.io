@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 
 <head>
+    <title>Sure Health SAS Medicals | Medical Equipment</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <style>
+        .is-whatsapp {
+            background-color: #25D366;
+        }
+
+        .navbar-burger {
+            color: var(--bulma-navbar-item-color);
+            font-weight: bold;
+        }
+
+        /*
+            bulma's responsiveness: touch screens have a max-width of 1023px
+        */
+        @media only screen and (max-width: 1023px) {
+            .is-whatsapp-number {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
 </head>
 
-<body>
-    <h1>Sure Health SAS</h1>
+<body class="container">
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="/images/logo.png" alt="Sure Health SAS Medicals Logo" />
+                <b>Sure Health SAS</b>
+            </a>
+            <div class="navbar-burger js-burger" data-target="navbarButtons">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbar-menu" id="navbarButtons">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="button is-link" href="tel:+919820533012">
+                                <i class="lni lni-telephone-1"></i>&nbsp;+91&nbsp;98205&nbsp;33012
+                            </a>
+                            <a class="button is-whatsapp"
+                                href="https://wa.me/+919820533012?text=I'm%20interested%20in%20your%20products%20%26%20services.%20Please%20reach%20out%20so%20that%20we%20can%20discuss.">
+                                <i class="lni lni-whatsapp"></i>&nbsp;WhatsApp<span
+                                    class="is-whatsapp-number">&nbsp;+91&nbsp;98205&nbsp;33012</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>
