@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html data-theme="light">
+<html data-theme="light" lang="en">
 
 <head>
     <title>Sure Health SAS Medicals | Medical Equipment</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sure Health SAS Medicals is a Medical Equipment Trading Firm">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/bulma.min.css" />
@@ -14,6 +15,7 @@
 
         .is-whatsapp {
             background-color: #25D366;
+            border-color: #25D366;
         }
 
         .navbar-burger {
@@ -22,7 +24,7 @@
         }
 
         .logo-item {
-            font-size: 1.5em;
+            font-size: 1.7em;
             font-family: "Markazi Text", serif;
             font-optical-sizing: auto;
             font-weight: 700;
@@ -37,7 +39,7 @@
             margin-top: 50px;
         }
 
-        .cell h1 {
+        .cell .title {
             font-family: "Markazi Text", serif;
             font-optical-sizing: auto;
             font-weight: 700;
@@ -47,7 +49,7 @@
             line-height: 0.9;
         }
 
-        .cell h4 {
+        .cell .subtitle {
             margin-bottom: 0;
             margin-top: 20px;
             font-family: "Markazi Text", serif;
@@ -74,6 +76,56 @@
             stroke-dashoffset: 1000;
             stroke-dasharray: 1000;
             animation: ekg 1.5s linear forwards infinite;
+        }
+
+        .footer {
+            background-color: #b01828;
+            color: #ffffff;
+        }
+
+        .footer .fixed-grid {
+            margin-top: 0;
+        }
+
+        .footer-heading {
+            display: flex;
+            font-weight: bold;
+            font-size: 1.6em;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .footer-heading i {
+            font-size: 1.2em;
+            align-self: center;
+        }
+
+        .footer iframe {
+            margin-bottom: 10px;
+        }
+
+        .footer .button {
+            width: 100%;
+        }
+
+        .footer .button i {
+            font-size: 1.5em;
+        }
+
+        .footer .social-links {
+            margin-bottom: 10px;
+        }
+
+        .is-facebook {
+            background-color: #0866FF;
+            border-color: #0866FF;
+            color: #ffffff;
+        }
+
+        .is-indiamart {
+            background-color: #2e3192;
+            border-color: #2e3192;
+            color: #ffffff;
         }
 
         @keyframes ekg {
@@ -133,9 +185,8 @@
     </script>
 </head>
 
-<body class="container">
-
-    <nav class="navbar">
+<body>
+    <nav class="navbar container">
         <div class="navbar-brand">
             <a class="navbar-item logo-item" href="/">
                 <img src="/images/logo.png" alt="Sure Health SAS Medicals Logo" />
@@ -153,7 +204,7 @@
                 <div class="navbar-item">
                     <div class="field is-grouped">
                         <p class="control">
-                            <a class="button is-link" href="tel:+919820533012">
+                            <a class="button is-dark" href="tel:+919820533012">
                                 <i class="lni lni-telephone-1"></i>&nbsp;+91&nbsp;98205&nbsp;33012
                             </a>
                             <a class="button is-whatsapp"
@@ -167,12 +218,13 @@
             </div>
         </div>
     </nav>
-    <div class="fixed-grid has-1-cols-mobile has-1-cols-tablet has-2-cols-desktop">
+    <div class="fixed-grid has-1-cols-mobile has-1-cols-tablet has-2-cols-desktop container">
         <div class="grid">
             <div class="cell">
-                <h1>Medical Equipment and BIS Certified Medical Calibration</h1>
-                <h4>We Offer a Wide Range of Medical Equipment like Wheel Chairs, First Aid Kits, Oximeter and
-                    Defibrillators.</h4>
+                <div class="title">Medical Equipment and BIS Certified Medical Calibration</div>
+                <div class="subtitle">We Offer a Wide Range of Medical Equipment like Wheel Chairs, First Aid Kits,
+                    Oximeter and
+                    Defibrillators.</div>
             </div>
             <div class="cell">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -186,6 +238,44 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="fixed-grid has-1-cols-mobile has-1-cols-tablet has-3-cols-desktop container">
+            <div class="grid">
+                <div class="cell">
+                    <div class="footer-heading"><i class="lni lni-location-arrow-right"></i>&nbsp;Location</div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.908988038042!2d72.85343182610447!3d19.111648200850688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8340ac9497b%3A0xa376a312c346f289!2sThe%20Baya%20Goldspot%2C%20Parshiwada%2C%20Kajuwadi%2C%20Chakala%2C%20Andheri%20East%2C%20Mumbai%2C%20Maharashtra%20400053!5e0!3m2!1sen!2sin!4v1740853860058!5m2!1sen!2sin"
+                        style="border:0;width:100%;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="The Baya Goldspot"></iframe>
+                    <div>A/302, Baya Goldspot, Plot CTS-528, Kajuwadi, Chakala Road, Andheri, East, Andheri East,
+                        Mumbai-400099, Maharashtra, India</div>
+                </div>
+                <div class="cell"></div>
+                <div class="cell">
+                    <div class="footer-heading"><i class="lni lni-message-3-text"></i>&nbsp;Contact Us</div>
+                    <div class="social-links">
+                        <a class="button is-dark" href="tel:+919820533012">
+                            <i class="lni lni-telephone-1"></i>&nbsp;+91&nbsp;98205&nbsp;33012
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a class="button is-indiamart" target="_blank"
+                            href="https://www.indiamart.com/surehealthsasmedicals/">IndiaMART</a>
+                    </div>
+                    <div class="social-links">
+                        <a class="button is-facebook" target="_blank"
+                            href="https://www.facebook.com/people/Sure-Health-SAS-Medicals/61565506914251/"><i
+                                class="lni lni-facebook"></i>&nbsp;Facebook</a>
+                    </div>
+                    <div class="social-links">
+                        <a class="button is-whatsapp" target="_blank"
+                            href="https://wa.me/+919820533012?text=I'm%20interested%20in%20your%20products%20%26%20services.%20Please%20reach%20out%20so%20that%20we%20can%20discuss."><i
+                                class="lni lni-whatsapp"></i>&nbsp;WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
